@@ -2,7 +2,7 @@ import openai
 import time
 
 # Replace YOUR_API_KEY with your actual API key
-openai.api_key = "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"
+openai.api_key = "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"
 
 # Set up the prompt and model parameters
 prompt = "Give me some information about British Museum,be specific."
