@@ -4,7 +4,7 @@ import time
 
 # Replace YOUR_API_KEY with your actual API key
 prompt = ""
-openai.api_key = "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"
+openai.api_key = "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"
 
 # Set up the prompt and model parameters
 model_engine = "text-davinci-002"
