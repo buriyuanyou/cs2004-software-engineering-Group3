@@ -1,0 +1,247 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    padding-left: 30px;
+    box-sizing: border-box;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-left {
+    flex: 1;
+    display: flex;
+    color: white;
+    font-size: 250%;
+    font-weight: 100;
+    font-family: 方正宋一简体;
+}
+
+.header-right {
+    display: flex;
+    margin: 0px 15px;
+    padding: 0px 10px;
+    font-family: Agency FB;
+    color: white;
+    font-size: 250%;
+    font-weight: 200;
+}
+
+.exmbtn {
+    margin: 0px 5px;
+    padding: 5px 10px;
+    font-size: 15px;
+    text-align: center;
+    border-color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+}
+
+/* 设置按钮的悬停样式 */
+.exmbtn:hover {
+    border-color: rgb(255, 255, 255);
+    background-color: rgb(94, 92, 92);
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 10px 30px;
+    box-sizing: border-box;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body {
+    margin: 0px;
+}
+
+main {
+    width: 100%;
+    /*设置为flex容器*/
+    display: flex;
+    margin-top: 67.2px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 5px;
+}
+
+
+th,
+td {
+    /* 字体颜色为白色 */
+    color: #fff;
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #77500870;
+}
+
+th {
+    color: #fff;
+}
+
+tr:hover {
+    background-color: #986e215c;
+}
+
+.question-section {
+    position: relative;
+    left: 190px;
+    margin: 20px;
+    width: 70%;
+    /*设置为flex容器*/
+    display: flex;
+    /*垂直方向排列其子元素*/
+    flex-direction: column;
+}
+
+.num-next {
+    /*设置为flex容器*/
+    display: flex;
+    /*垂直方向排列其子元素*/
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.question-num {
+    /* 将容器设置为flex布局 */
+    display: flex;
+    width: auto;
+    color: white;
+}
+
+#question {
+    margin: 20px 0px;
+    color: white;
+    font-size: 200%;
+    font-family: 宋体;
+}
+
+h2 {
+    margin: 0px;
+}
+
+.option_img {
+    position: relative;
+
+    /* 将容器设置为flex布局 */
+    display: flex;
+
+    /* 设置为水平排列 */
+    flex-direction: row;
+
+    overflow: hidden;
+}
+
+.option {
+    /* 将容器设置为flex布局 */
+    display: flex;
+
+    /* 设置为垂直排列 */
+    flex-direction: column;
+
+    width: 40%;
+}
+
+.option button {
+    width: 100%;
+    text-align: left;
+    /* 设置按钮之间的垂直间距 */
+    margin-bottom: 45px;
+    font-size: 165%;
+    font-family: 仿宋;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    border-color: rgba(255, 255, 255, 0.65);
+    background-color: rgba(76, 0, 9, 0.45);
+}
+
+#option4-btn {
+    margin-bottom: 0px;
+}
+
+/* 设置按钮的悬停样式 */
+.option button:hover {
+    border-color: rgb(255, 255, 255);
+    background-color: rgb(112, 0, 0);
+}
+
+.next {
+    /* 将容器设置为flex布局 */
+    display: flex;
+    width: auto;
+}
+
+.next button {
+    position: relative;
+    margin-left: auto;
+    width: 100px;
+    font-size: 150%;
+    font-weight: 100;
+    border-radius: 5px;
+    color: white;
+    border-color: rgba(255, 255, 255, 0.85);
+    background-color: rgba(76, 0, 9, 0.65);
+}
+
+/* 设置按钮的悬停样式 */
+.next button:hover {
+    border-color: rgb(255, 255, 255);
+    background-color: rgb(112, 0, 0);
+}
+
+.recbg {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    float: left;
+    object-fit: cover;
+    background-repeat: repeat;
+    background-size: contain;
+    filter: brightness(40%);
+}
+
+.testbg {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    float: left;
+    object-fit: cover;
+    background-repeat: repeat;
+    background-size: contain;
+    filter: brightness(60%);
+}
+
+#testimg {
+    position: absolute;
+    right: 0;
+    top: 0;
+    /* 图片最大高度为父容器的100% */
+    max-height: 100%;
+    /* 根据比例自动调整宽度 */
+    width: auto;
+    /* 图片最大宽度为父容器的100% */
+    max-width: 50%;
+    border-radius: 5%;
+}

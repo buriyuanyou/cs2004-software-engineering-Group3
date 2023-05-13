@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    {% load static %}
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing System - Welcome to Testing System</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/answerstyle.css">
+
+</head>
+
+<body>
+
+    <header>
+        <div class="header-left">Take a test</div>
+        <div id="timer" class="header-right">00:00</div>
+        <div>
+            <!-- <button id="start-btn" class="exmbtn">Start testing</button> -->
+            <button id="end-btn" class="exmbtn">End test</button>
+        </div>
+    </header>
+
+    <main>
+        <div class="testbg" style="background-image: url({% static 'test1.jpg' %})"></div>
+        <div class="question-section">
+            <div class="num-next">
+                <div class="question-num">
+                    <h2 id="question-num">Question :</h2>
+                </div>
+                <div class="next">
+                    <button id="next-btn" type="button" value="next">NEXT-></button>
+                </div>
+            </div>
+            <p id="question">This is a question.</p>
+            <div class="option_img">
+                <div class="option">
+                    <button id="option1-btn" type="button" value="a">option A</button>
+                    <button id="option2-btn" type="button" value="b">option B</button>
+                    <button id="option3-btn" type="button" value="c">option C</button>
+                    <button id="option4-btn" type="button" value="d">option D</button>
+                </div>
+                <img id="testimg" src="/static/test3.jpg">
+            </div>
+            
+        </div>
+    </main>
+    <script src="/static/js/timer.js"></script>
+    <script src="/static/js/receivequestion.js"></script>
+    <script src="/static/js/processselection.js"></script>
+</body>
+
+
+</html>

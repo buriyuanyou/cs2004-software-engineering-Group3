@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    {% load static %}
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing System - Welcome to Testing System</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/answerstyle.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-left">Take a test</div>
+        <div>
+            <button id="back-btn" class="exmbtn">Back</button>
+            <button id="start-btn" class="exmbtn">Start a new test</button>
+        </div>
+    </header>
+
+    <footer>
+        <div id="numoftest">Number of tests:</div>
+        <div id="avgscore">Average score:</div>
+        <div id="avgtime">Average time:</div>
+    </footer>
+
+    <main>
+        <div class="recbg" style="background-image: url({% static 'test4.jpg' %})"></div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Number</th>
+                    <th>Date</th>
+                    <th>Time spent</th>
+                    <th>Score</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+
+    </main>
+
+    <script>
+        var startBtn = document.getElementById("start-btn");
+        startBtn.addEventListener("click", function () {
+            var confirmStart = confirm("Are you sure you want to start the test? Click OK to start the timer.");
+            if (confirmStart) {
+                window.location.href = "answertest.html"; // 跳转到新页面
+            }
+        });
+        var backBtn = document.getElementById("back-btn");
+        backBtn.addEventListener("click", function () {
+            window.location.href = "{% url 'home' %}"; // 跳转到首页面
+            
+        });
+    </script>
+    <script src="/static/js/updatetable.js"></script>
+</body>
+
+</html>
