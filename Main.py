@@ -187,8 +187,7 @@ def answer():
     question = request.args.get("q", "")
     # 在这里进行问题处理和回答的生成
     # Replace YOUR_API_KEY with your actual API key
-    openai.api_key = "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"
-    # openai.api_key = "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"
+    openai.api_key = ""
 
     # Set up the prompt and model parameters
     prompt = question
